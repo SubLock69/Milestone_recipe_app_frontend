@@ -6,6 +6,7 @@ function PageWrapper (html) {
     <html>
       <head>
         <title>{html.title}</title>
+        <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" media="screen" />
         <ScriptTag src="./js/main.js" />
       </head>
       <body>
