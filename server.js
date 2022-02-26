@@ -18,4 +18,8 @@ app.use(methodOverride('__m')); //Use "__m=[METHOD]" in query params
 //Route Handlers
 app.use('/', require('./routes/index'));
 
+app.get('*', (req,res) => {
+  res.render('404');
+})
+
 module.exports = app;

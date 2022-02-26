@@ -4,3 +4,11 @@ White background
 orange cards with green text (dark enough to be black but still green)
 Same dark green text as foreground colors
 */
+* {transition: all 0.3s ease;}
+.fineprint {font-size: 0.5rem;}
+.bg-white {background: white;}
+.bg-orange {background: orange;}
+.bg-green {background: darkolivegreen;}
+.tc-orange {color: rgb(200, 100, 0);}
+.tc-green {color: rgb(0, 75, 0);}
+.tc-white {color: white;}

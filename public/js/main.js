@@ -25,9 +25,8 @@ if(localStorage.getItem('user_id') != null) {
 }
 
 //Handle Pageload sequence
-window.onload = async () => {
+window.onload = setTimeout(async () => {
   let name = await fetch(`${BE_API_URL}/${id}`);
   name = await name.json();
-  console.log(name);
   document.getElementById('hi').innerHTML = `Hi ${name.fname}`;
-};
+}, 2000);
